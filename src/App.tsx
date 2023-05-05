@@ -43,19 +43,23 @@ Last Name:-
 <br />
 Date of Birth:-
   <br/>
-<input className='App1' type = 'text' value={fDOB} onChange={(e) =>setfDOB(e.target.value)} placeholder='Enter your DOB'/>
+  <input type = "date" name = "d" min = "15/5/1990"></input>
 <br />
 <br />
+Age:-
+		<input type = "Number" name = "a" min = "15" max = "30" step = "2"></input>
+		<br/>
+    <br/>
 Email:-
 <br/>
 <input className='App1' type = 'text' value={femail} onChange={(e) =>setfemail(e.target.value)} placeholder='Enter your email'/>
-
+<br/>
 <br/>
 <div>
 <form action="/action_page.php">
-  <label className='App1'>Select your College:-</label>
+  <label>Select your College:-</label>
   <br/>
-  <select name="College" id="College">
+  <select  className='App1' name="College">
   <option value="Select your College">Select your College</option>
     <option value="Kamla Neharu College Nagpur">Kamla Neharu College Nagpur</option>
     <option value="Priyadarshini Bhagwati College Of Engineering - [PBCOE], Nagpur">Priyadarshini Bhagwati College Of Engineering - [PBCOE], Nagpur</option>
@@ -66,7 +70,6 @@ Email:-
   </select>
 </form>
 </div>
-<br />
 <br />
 Villege:-
 <br/>
@@ -89,11 +92,9 @@ Villege:-
    
 </form>
 </div>
+<br/>
+<br/>
 
-         
-
-<br />
-<br />
 <button className='App2' onClick={ () => {submitForm()}}> submit </button>
 
 

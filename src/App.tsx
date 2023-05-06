@@ -12,7 +12,7 @@ const submitForm = () => {
     console.log('email' , femail);
     console.log('Villege' , fVillege);
     console.log('State' , fState);
-    
+  
 }
 
 const [fFirstname, setfFirstname] = useState('');

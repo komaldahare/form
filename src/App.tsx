@@ -10,7 +10,6 @@ const submitForm = () => {
     console.log('Lastname', fLastname);
     console.log('DOB', fDOB);
     console.log('email' , femail);
-    console.log('CollegeName' , fCollegeName);
     console.log('Villege' , fVillege);
     console.log('State' , fState);
     
@@ -20,7 +19,6 @@ const [fFirstname, setfFirstname] = useState('');
 const [fLastname, setfLastname] = useState('');
 const [fDOB, setfDOB] = useState('');
 const [femail, setfemail] = useState('');
-const [fCollegeName, setfCollegename] = useState('');
 const [fVillege, setfVillege] = useState('');
 const [fState, setfState] = useState('');
 
@@ -43,11 +41,11 @@ Last Name:-
 <br />
 Date of Birth:-
   <br/>
-  <input type = "date" name = "d" min = "15/5/1990"></input>
+  <input type = "date" value = "fDOB" min = "15/5/1990"/>
 <br />
 <br />
 Age:-
-		<input type = "Number" name = "a" min = "15" max = "30" step = "2"></input>
+		<input type = "Number" name = "a" min = "15" max = "30" step = "2" />
 		<br/>
     <br/>
 Email:-
